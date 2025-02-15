@@ -10,49 +10,57 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/articles/" aria-label="Read my articles">Articles</a></li>
+                    <li><a href="/books/" aria-label="Explore my books">Books</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <nav>
-            <a href="/js/">Articles</a> |
-            <a href="/python/">Books</a>
-        </nav>
-    </header>
+        <main>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>I am Khriston Robinson</h1>
+                    <p>I am a Writer(This is my dog CJ)</p>
+                    <button aria-label="Contact Khriston Robinson for work opportunities">Hire me</button>
+                </div>
+            </div> 
 
-    <main>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>I am Khriston Robinson</h1>
-                <p>I am a Writer</p>
-                <button aria-label="Hire Khriston Robinson">Hire me</button>
-            </div>
-        </div>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I am a writer who mostly writes fantasy and sci-fi. I'm open to writing articles.
+                    Feel free to look at my work.
+                </p>
+            </section>
 
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I am a writer who mostly writes fantasy and sci-fi. I'm open to writing articles.
-                Feel free to look at my work.
-            </p>
-        </section>
+            <section>
+                <h2>Contact Me</h2>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" aria-label="First Name" required><br><br>
+                    
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" aria-label="Last Name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-label="Email Address" required><br><br>
 
-        <section>
-            <h2>Contact Me</h2>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
+                    <label for="w3review">Message to me:</label><br>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50" aria-label="Message" placeholder="Tell me what you want to tell me..."></textarea><br><br>
 
-    <footer>
-        © Khriston Robinson - 2025
-    </footer>
+                    <input type="submit" value="Submit" aria-label="Submit Form">
+                </form>
+            </section>
+        </main>
 
+        <footer>
+            © Khriston Robinson - 2025
+        </footer>
+    </div>
 </body>
 
 </html>
