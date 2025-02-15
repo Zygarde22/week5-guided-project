@@ -27,16 +27,28 @@
 
     Feel free to look at my work.
     </p>
-    <h2>Contact Me</h2>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email">email:</label>
-        <input type="text" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+    <section>
+        <h2>Contact Me</h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+             
+            <label for="w3review">Message to me:</label><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+                Tell me what you want to tell me?
+            </textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
 
     <footer>©Khriston Robinson-2025</footer>
 </body>
